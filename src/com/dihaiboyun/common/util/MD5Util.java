@@ -1,4 +1,4 @@
-package com.dihaitech.common.util;
+package com.dihaiboyun.common.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

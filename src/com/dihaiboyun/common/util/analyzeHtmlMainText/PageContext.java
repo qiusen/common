@@ -1,4 +1,4 @@
-package com.dihaitech.common.util.analyzeHtmlMainText;
+package com.dihaiboyun.common.util.analyzeHtmlMainText;
 //import org.htmlparser.Node;
 
 public class PageContext {

@@ -1,4 +1,4 @@
-package com.dihaitech.common.util;
+package com.dihaiboyun.common.util;
 
 /**
  * 类型工具类

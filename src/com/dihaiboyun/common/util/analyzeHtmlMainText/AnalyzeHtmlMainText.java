@@ -2,7 +2,7 @@
  * 使用HtmlParser获取网页正文件
  * 需 htmlparser.jar
  */
-package com.dihaitech.common.util.analyzeHtmlMainText;
+package com.dihaiboyun.common.util.analyzeHtmlMainText;
 
 import java.net.HttpURLConnection;
 import java.net.URI;

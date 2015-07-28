@@ -1,4 +1,4 @@
-package com.dihaitech.common.util;
+package com.dihaiboyun.common.util;
 
 import java.nio.charset.Charset;
 import java.security.SecureRandom;

@@ -1,4 +1,4 @@
-package com.dihaitech.common.util.json;
+package com.dihaiboyun.common.util.json;
 
 import net.sf.json.util.PropertyFilter;
 

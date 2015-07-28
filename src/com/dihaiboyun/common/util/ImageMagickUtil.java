@@ -1,4 +1,4 @@
-package com.dihaitech.common.util;
+package com.dihaiboyun.common.util;
 
 import java.awt.Dimension;
 import java.awt.Rectangle;
