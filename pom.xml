@@ -358,6 +358,14 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<dependency>
+			<groupId>com.swetake.util</groupId>
+			<artifactId>QRCode</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<!--本地jar的路径,相对或者绝对都可以 -->
+			<systemPath>${basedir}/lib/QRCode.jar</systemPath>
+		</dependency>
 
   </dependencies>
   <build>
