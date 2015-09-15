@@ -1,8 +1,10 @@
 package com.dihaiboyun.common.util;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+
 import org.joda.time.LocalDateTime;
 import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
@@ -195,7 +197,55 @@ public class DateUtil {
 	public static Date getCurrentTime(){
 		return LocalDateTime.now().toDate();
 	}
+	
+	
+	
+	
+	/**
+	 * 今天是今年的第几天
+	 * @return
+	 */
+	public static int getCurrentDays(){
+		Date date = new Date();
+        
+        return getDaysByDate(date);
+	}
+	
+	/**
+	 * 指定时间是当年的第几天
+	 * @param dateStr	时间，格式：yyyy-MM-dd
+	 * @return
+	 */
+	public static int getDaysByDate(String dateStr){        
+        Date date = null;
+		try {
+			date = new SimpleDateFormat(DATE_FORM).parse(dateStr);
+			
+			return getDaysByDate(date);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		return -1;
+	}
+	
+	/**
+	 * 指定时间是当年的第几天
+	 * @param date	时间
+	 * @return
+	 */
+	public static int getDaysByDate(Date date){
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        int days = cal.get(Calendar.DAY_OF_YEAR);
+        
+//        System.out.println("第 "+days+" 天");
+        return days;
+	}
 
+	
+	
+	
+	
 	public static void main(String[] args) {
 		/*
 		 * Date d = DateUtil.dataPlusMinus(new Date(), 1, -5);
@@ -206,6 +256,9 @@ public class DateUtil {
 		 * System.out.println(sdf.format(d));
 		 */
 
-		System.out.println(DateUtil.getNowDateString(TIME_CONTINUOUS_FORM));
+//		System.out.println(DateUtil.getNowDateString(TIME_CONTINUOUS_FORM));
+		
+		getCurrentDays();
+		getDaysByDate("1991-12-29");
 	}
 }
