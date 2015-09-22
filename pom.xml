@@ -366,6 +366,33 @@
 			<!--本地jar的路径,相对或者绝对都可以 -->
 			<systemPath>${basedir}/lib/QRCode.jar</systemPath>
 		</dependency>
+		
+		<!-- lucene 5.3.0 -->
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-core</artifactId>
+			<version>5.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-queryparser</artifactId>
+			<version>5.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-analyzers-common</artifactId>
+			<version>5.3.0</version>
+		</dependency>
+		
+		<!-- ik-analyzer 3.2.8 -->
+		<dependency>
+			<groupId>org.wltea.ik-analyzer</groupId>
+			<artifactId>ik-analyzer</artifactId>
+			<version>2012FF</version>
+			<scope>system</scope>
+			<!--本地jar的路径,相对或者绝对都可以 -->
+			<systemPath>${basedir}/lib/IKAnalyzer2012_FF.jar</systemPath>
+		</dependency>
 
   </dependencies>
   <build>
