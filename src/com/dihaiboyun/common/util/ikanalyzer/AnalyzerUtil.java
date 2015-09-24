@@ -13,7 +13,7 @@ import org.wltea.analyzer.core.Lexeme;
 
 /**
  * 分析工具
- * 将 IKAnalyzer.cfg.xml LICENSE.txt	NOTICE.txt	stopword.dic放到src目录下
+ * 将 IKAnalyzer.cfg.xml LICENSE.txt	NOTICE.txt	stopword.dic [ext.dic]放到src目录下
  * 导入IKAnalyzer2012_FF.jar
  * @author qiusen
  *
