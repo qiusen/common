@@ -37,7 +37,7 @@ public class HttpServerUtil {
 
 	public static void main(String[] args) throws IOException {
 		HttpServer server = HttpServer.create(new InetSocketAddress(
-				"127.0.0.1", 9999), 0);
+				"127.0.0.1", 9999), 100);	//监听端口9999,能同时接受100个请求 
 		server.createContext("/", new MyResponseHandler());
 		server.setExecutor(null); // creates a default executor
 		server.start();
