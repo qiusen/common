@@ -45,11 +45,10 @@ public class MD5Util {
 		}
 		return str != null ? new String(str) : "";
 	}
-	
-	
 
 	/**
 	 * 文件MD5码
+	 * 
 	 * @param file
 	 * @return
 	 */
@@ -60,7 +59,7 @@ public class MD5Util {
 			fis = new FileInputStream(file);
 			byte[] buffer = new byte[2048];
 			int length = -1;
-//			long s = System.currentTimeMillis();
+			// long s = System.currentTimeMillis();
 			while ((length = fis.read(buffer)) != -1) {
 				md.update(buffer, 0, length);
 			}
@@ -81,8 +80,6 @@ public class MD5Util {
 			}
 		}
 	}
-
-	/** */
 
 	/**
 	 * 
@@ -118,8 +115,9 @@ public class MD5Util {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(MD5Util.stringToMD5("admin"));
-		
-		System.out.println(MD5Util.fileToMD5(new File("/Users/qiusen/libevent-2.0.21-stable.tar.gz")));
+
+		System.out.println(MD5Util.fileToMD5(new File(
+				"/Users/qiusen/libevent-2.0.21-stable.tar.gz")));
 	}
 
 }
