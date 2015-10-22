@@ -393,6 +393,12 @@
 			<!--本地jar的路径,相对或者绝对都可以 -->
 			<systemPath>${basedir}/lib/IKAnalyzer2012_FF.jar</systemPath>
 		</dependency>
+		
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.7</version>
+		</dependency>
 
   </dependencies>
   <build>
